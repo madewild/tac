@@ -22,6 +22,6 @@ for url in urls:
     print(f"Dowloading {filename}...")
     start_time = time.time()
     response = requests.get(url)
-    print(f"   done in {time.time() - start_time} seconds")
+    print(f"   done in {(time.time() - start_time):.1f} seconds")
     with open(f"data/{filename}", 'wb') as f:
         f.write(response.content)
