@@ -2,6 +2,7 @@
 
 import re
 import requests
+import time
 
 pdf_list = []
 
@@ -19,6 +20,8 @@ print(f"{len(urls)} PDF files found")
 for url in urls:
     filename = url.split("/")[-1]
     print(f"Dowloading {filename}...")
+    start_time = time.time()
     response = requests.get(url)
+    print(f"   done in {time.time() - start_time} seconds")
     with open(f"data/{filename}", 'wb') as f:
         f.write(response.content)
