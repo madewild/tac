@@ -1,4 +1,4 @@
-"Scraping the AVB for PDFs of bulletins"
+"""Scraping the AVB for PDFs of bulletins"""
 
 import re
 import requests
