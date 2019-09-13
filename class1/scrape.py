@@ -52,6 +52,7 @@ if __name__ == "__main__":
         except IndexError:
             start_from = 0
         download(all_urls, start_from)
+        check(all_urls)
     elif task == "check":
         check(all_urls)
     else:
