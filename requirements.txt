@@ -1,1 +1,4 @@
+gensim==3.8.0
 langid==1.1.6
+nltk==3.4.5
+scikit-learn==0.21.3
