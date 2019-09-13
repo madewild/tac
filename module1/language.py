@@ -4,7 +4,7 @@ import os
 from collections import defaultdict
 
 import langid
-langid.set_languages(['fr', 'nl'])
+langid.set_languages(['fr', 'nl']) # restricting to these two languages only to prevent weird results
 
 lang_dict = defaultdict(int)
 
