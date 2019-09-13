@@ -7,7 +7,7 @@ import time
 import sys
 
 def get_urls():
-    """Initialize process"""
+    """Retrieve all URLs from root AVB page"""
     root_url = "https://archives.bruxelles.be/bulletins/date"
     resp = requests.get(root_url)
     print(f"Status: {resp.status_code}")
