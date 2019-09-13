@@ -37,7 +37,7 @@ def check(urls):
         filename = url.split("/")[-1]
         downloads = os.listdir('data/pdf')
         if filename not in downloads:
-            print(filename)
+            print(f"{filename} is missing!")
 
 if __name__ == "__main__":
     all_urls = get_urls()
