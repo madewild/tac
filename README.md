@@ -21,3 +21,17 @@ Then install Python dependencies with `pip install -r requirements.txt`
 Scraping the AVB to retrieve 2833 PDF bulletins
 
 Usage: `python scrape.py`
+
+## Module 2
+
+## Module 3
+
+Sentence tokenizer and word2vec model builder
+
+## Module 4
+
+## Module 5
+
+Language detection with langid
+
+## Module 6
