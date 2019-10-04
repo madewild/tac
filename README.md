@@ -18,10 +18,13 @@ Then install Python dependencies with `pip install -r requirements.txt`
 
 ## Module 1
 
-sql.py: Querying a simple relation database
-sparql.py: Querying the Wikidata SPARQL endpoint
-api.py: Playing with OpenStreetMap and EUcountries APIs
-scrape.py: Scraping the AVB to retrieve 2833 PDF bulletins
+`sql.py`: Querying a simple relation database
+
+`sparql.py`: Querying the Wikidata SPARQL endpoint
+
+`api.py`: Playing with OpenStreetMap and EUcountries APIs
+
+`scrape.py`: Scraping the AVB to retrieve 2833 PDF bulletins
 
 ## Module 2
 
