@@ -7,11 +7,13 @@ Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.
 It is recommended to run this code in a virtual environment: 
 
 ```
-pip install virtualenv
-virtualenv tac_venv --python=python3
-cd tac_venv
-source bin/activate
 git clone git@github.com:madewild/tac.git
+cd tac
+pip install virtualenv
+virtualenv venv --python=python3
+source venv/bin/activate
+which pip
+pip install -r requirements.txt
 ```
 
 Then install Python dependencies with `pip install -r requirements.txt`
