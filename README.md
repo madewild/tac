@@ -13,7 +13,6 @@ pip install virtualenv
 virtualenv venv --python=python3
 source venv/bin/activate
 which pip
-pip install -r requirements.txt
 ```
 
 Then install Python dependencies with `pip install -r requirements.txt`
