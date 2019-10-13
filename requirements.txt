@@ -1,5 +1,7 @@
 gensim==3.8.0
 langid==1.1.6
+matplotlib==3.1.0
 nltk==3.4.5
+numpy==1.16.4
 scikit-learn==0.21.3
 SPARQLWrapper==1.8.4
