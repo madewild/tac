@@ -6,4 +6,6 @@ numpy==1.16.4
 scikit-learn==0.21.3
 spacy==2.2.1
 SPARQLWrapper==1.8.4
+textblob==0.15.3
+textblob-fr==0.2.0
 yake==0.3.7
