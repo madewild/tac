@@ -5,3 +5,4 @@ nltk==3.4.5
 numpy==1.16.4
 scikit-learn==0.21.3
 SPARQLWrapper==1.8.4
+yake==0.3.7
