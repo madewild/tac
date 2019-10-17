@@ -45,9 +45,11 @@ Then install Python dependencies with `pip install -r requirements.txt`
 
 Install SpaCy from requirements then run this command to download French model: `python -m spacy download fr_core_news_sm`
 
-`ner.py`: perform NER with SpaCy model
+`ner.py`: perform NER with SpaCy FR model
 
 ### Sentiment analysis
+
+`sentiment.py`: analyse positive/negative sentences with textblob
 
 ## Module 4
 
