@@ -40,6 +40,7 @@ Then install Python dependencies with `pip install -r requirements.txt`
 ### Keyword extraction
 
 `keyword.py`: using YAKE to extract French keywords in each text file
+
 `wordcloud.sh`: generating a wordcloud for a given year (calling `filter.py` in the background)
 
 ### Named-entity recognition
