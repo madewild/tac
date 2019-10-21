@@ -1,5 +1,6 @@
 """Filter out stopwords for word cloud"""
 
+import sys
 import nltk
 from nltk.corpus import stopwords
 
@@ -11,8 +12,10 @@ sw += ["les", "plus", "cette", "fait", "faire", "être", "deux", "comme", "dont"
        "van", "het", "autre", "jusqu"]
 sw = set(sw)
 
-path = "data/txt/1919.txt"
-output = open("module3/1919_keywords.txt", "w")
+year = sys.argv[1]
+
+path = f"module3/{year}.txt"
+output = open(f"module3/{year}_keywords.txt", "w")
 
 with open(path) as f:
     text = f.read()
