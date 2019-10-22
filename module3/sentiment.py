@@ -14,7 +14,7 @@ perc = f"{100*abs(pola):.0f}"
 if pola > 0:
     sent = f"{perc}% positive"
 elif pola < 0:
-    sent = f"{perc} negative"
+    sent = f"{perc}% negative"
 else:
     sent = "neutral"
 if subj > 0:
