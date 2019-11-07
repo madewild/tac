@@ -1,8 +1,9 @@
 """Testing web APIs with HTTP GET method"""
 
 import json
-import requests
 import sys
+
+import requests
 
 def print_coord(address):
     """Retrieve coordinates from Open Street Map"""

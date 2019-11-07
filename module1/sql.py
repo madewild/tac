@@ -2,9 +2,10 @@
 
 import argparse
 import os.path
-import requests
 import sqlite3
 import zipfile
+
+import requests
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-a', '--artist', type=str, help='Filtering on artist name')

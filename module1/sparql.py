@@ -2,7 +2,6 @@
 
 import argparse
 from datetime import datetime as dt
-import sys
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 
@@ -11,6 +10,7 @@ parser.add_argument('-f', '--filter', type=str, help='Filtering on name')
 parser.add_argument('-n', '--number', type=int, help='Number of rows to display')
 
 def get_rows():
+    """Retrieve results from SPARQL"""
     endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
     sparql = SPARQLWrapper(endpoint)
 

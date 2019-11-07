@@ -2,9 +2,10 @@
 
 import os
 import re
-import requests
 import time
 import sys
+
+import requests
 
 def get_urls():
     """Retrieve all URLs from root AVB page"""
@@ -20,9 +21,9 @@ def get_urls():
     print(f"{len(urls)} PDF files found")
     return urls
 
-def download(urls, n=0):
-    """Dowloading all files starting from n"""
-    for url in urls[n:]:
+def download(urls, offset=0):
+    """Dowloading all files starting from offset"""
+    for url in urls[offset:]:
         filename = url.split("/")[-1]
         print(f"Dowloading {filename}...")
         start_time = time.time()
