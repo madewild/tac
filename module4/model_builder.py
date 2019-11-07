@@ -12,7 +12,7 @@ from nltk.tokenize import wordpunct_tokenize
 
 wnl = WordNetLemmatizer()
 
-nltk.data.path.append("/srv/resources/nltk_data")
+nltk.data.path.append("/home/max/nltk_data")
 
 logging.basicConfig(format='%(asctime)s : %(threadName)s : %(levelname)s : %(message)s', level=logging.INFO)
 

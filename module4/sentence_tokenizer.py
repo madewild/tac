@@ -5,7 +5,7 @@ import sys
 import nltk
 from nltk.tokenize import sent_tokenize
 
-nltk.data.path.append("/srv/resources/nltk_data/")
+nltk.data.path.append("/home/max/nltk_data")
 
 infile = f"data/txt/all.txt"
 outfile = f"data/sents.txt"
