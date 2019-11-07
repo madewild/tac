@@ -7,11 +7,8 @@ from nltk.tokenize import sent_tokenize
 
 nltk.data.path.append("/srv/resources/nltk_data/")
 
-prog = sys.argv[1]
-infile = f"data/{prog}_all.tsv"
-if not os.path.isfile(infile):
-    infile = f"data/{prog}_all.txt"
-outfile = f"data/{prog}_sents.txt"
+infile = f"data/txt/all.txt"
+outfile = f"data/sents.txt"
 
 with open(outfile, 'w', encoding="utf-8") as output:
     with open(infile, encoding="utf-8", errors="backslashreplace") as f:
