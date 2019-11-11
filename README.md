@@ -55,7 +55,15 @@ Install SpaCy from requirements then run this command to download French model: 
 
 ## Module 4
 
-Sentence tokenizer and word2vec model builder
+`classification.py`: supervised classification of 20 newsgroups
+
+`clustering.py`: unsupervised clustering with k-means
+
+`sentence_tokenizer.py`: split big text into sentences
+
+`model_builder.py`: train word2vec model on corpus
+
+`model_explorer.py`: explore similarity between vectors
 
 ## Module 5
 
