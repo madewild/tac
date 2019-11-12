@@ -1,10 +1,13 @@
 """Supervised classification example"""
 
+#%%
 import matplotlib.pyplot as plt
 from nltk.corpus import stopwords
 import seaborn as sn
+from pprint import pprint
 
 from sklearn.datasets import fetch_20newsgroups
+# use annual index instead?
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
@@ -17,7 +20,9 @@ print("Number of articles: " + str(len(news.data)))
 print("Number of categories: " + str(len(news.target_names)))
 
 labels = news.target_names
+pprint(labels)
 
+#%%
 classifier = Pipeline([ ('vectorizer', TfidfVectorizer(stop_words=stopwords.words('english'))),('classifier', MultinomialNB())])
 X_train, X_test, y_train, y_test = train_test_split(news.data, news.target, test_size=0.2, random_state=11)
 classifier.fit(X_train, y_train)
@@ -31,3 +36,6 @@ sn.heatmap(conf_mat, annot=True, fmt="d", xticklabels=labels, yticklabels=labels
 plt.ylabel('Actual')
 plt.xlabel('Predicted')
 plt.show()
+
+
+# %%
