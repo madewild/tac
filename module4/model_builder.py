@@ -4,13 +4,10 @@ import logging
 import sys
 
 from gensim.models.phrases import Phrases, Phraser
-from gensim.models.word2vec import Word2Vec
+from gensim.models import Word2Vec
 
 import nltk
-from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import wordpunct_tokenize
-
-wnl = WordNetLemmatizer()
 
 nltk.data.path.append("/home/max/nltk_data")
 
