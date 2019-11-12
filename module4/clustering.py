@@ -38,8 +38,8 @@ def cluster_texts(files, clusters):
  
 if __name__ == "__main__":
     data_path = "data/txt/"
-    decade = sys.argv[1]
+    decade = sys.argv[1] # e.g. 1870 or 1930
     files = [f for f in sorted(os.listdir(data_path)) if f"_{decade[:-1]}" in f]
     print(f"{len(files)} documents to cluster for decade {decade}")
-    clusters = cluster_texts(files, 10)
+    clusters = cluster_texts(files, 5)
     pprint(dict(clusters))
