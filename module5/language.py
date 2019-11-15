@@ -12,7 +12,7 @@ root = "data/txt/"
 txts = os.listdir(root)
 print(f"{len(txts)} TXT files found")
 
-for txt in txts:
+for txt in sorted(txts):
     text = open(os.path.join(root, txt)).read()
     text_length = len(text)
     if text_length > 10:
