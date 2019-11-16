@@ -12,3 +12,5 @@ textblob-fr>=0.2.0
 yake>=0.3.7
 smart_open>=1.9.0
 faker>=2.0.4
+jupyter>=1.0.0
+notebook>=6.0.2
