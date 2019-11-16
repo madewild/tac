@@ -12,7 +12,7 @@ sw += ["les", "plus", "cette", "fait", "faire", "être", "deux", "comme", "dont"
 sw = set(sw)
 print(f"{len(sw)} stopwords used: {sorted(sw)}")
 
-path = "data/txt/all.txt"
+path = "data/all.txt"
 limit = 10**8
 
 with open(path) as f:

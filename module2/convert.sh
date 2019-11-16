@@ -6,5 +6,5 @@ for file in data/pdf/*.pdf; do pdftotext "$file" "${file%.*}.txt"; done
 mkdir data/txt
 mv data/pdf/*.txt data/txt/
 ls data/txt | wc -l
-cat data/txt/*.txt > data/txt/all.txt
-wc data/txt/all.txt
+cat data/txt/*.txt > data/all.txt
+wc data/all.txt
