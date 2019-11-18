@@ -69,7 +69,16 @@ Install SpaCy from requirements then run this command to download French model: 
 
 `language_detection`: language identification with langid
 
-`anonymization.py`: de-identification of data with Faker
+`faking.py`: generation of fake data with Faker
+
+Pour utiliser le script anonymize-it d'Elastic :
+
+```
+git clone git@github.com:elastic/anonymize-it.git
+cd anonymize-it
+pip install -r requirements.txt
+python anonymize.py configs/config.json
+```
 
 ## Module 6
 
