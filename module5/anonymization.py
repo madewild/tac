@@ -1,4 +1,4 @@
-"""Faking data with Faker"""
+"""Anonymizing data with Faker"""
 
 #%%
 from pprint import pprint
