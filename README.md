@@ -2,7 +2,7 @@
 
 Course material for "Traitement automatique de corpus" (STIC-B545) taught at [ULB](https://ulb.be)
 
-Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.org/dev/peps/pep-0498/) (3.7 is recommended)
+Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.org/dev/peps/pep-0498/) (3.8 is recommended)
 
 It is recommended to run this code in a virtual environment: 
 
