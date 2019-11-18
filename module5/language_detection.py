@@ -27,4 +27,4 @@ sorted_lang = sorted(lang_dict.items(), key=lambda kv: kv[1], reverse=True)
 
 for lang_code, nb_docs in sorted_lang:
     language = pycountry.languages.get(alpha_2=lang_code)
-    print(f"{language}\t{nb_docs}")
+    print(f"{language.name}\t{nb_docs}")
