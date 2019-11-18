@@ -71,7 +71,7 @@ Install SpaCy from requirements then run this command to download French model: 
 
 `faking.py`: generation of fake data with Faker
 
-Pour utiliser le script anonymize-it d'Elastic :
+To run the script anonymize-it by Elastic :
 
 ```
 git clone git@github.com:elastic/anonymize-it.git
