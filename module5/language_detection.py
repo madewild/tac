@@ -4,6 +4,7 @@ import os
 from collections import defaultdict
 
 import langid
+import pycountry
 #langid.set_languages(['fr', 'nl']) # forcing one of these languages
 
 lang_dict = defaultdict(int)
@@ -22,5 +23,8 @@ for txt in sorted(txts):
         print(f"{txt} contains only {text_length} characters, treating as unknown")
         lang_dict['n/a'] += 1
 
-for k, v in lang_dict.items():
-    print(f"{k}\t{v}")
+sorted_lang = sorted(lang_dict.items(), key=lambda kv: kv[1], reverse=True)
+
+for lang_code, nb_docs in sorted_lang:
+    language = pycountry.languages.get(alpha_2=lang_code)
+    print(f"{language}\t{nb_docs}")
