@@ -6,7 +6,7 @@ from collections import defaultdict
 import langid
 import pycountry
 
-#langid.set_languages(['fr', 'nl']) # forcing one of these languages
+langid.set_languages(['fr', 'nl']) # forcing one of these languages
 
 lang_dict = defaultdict(int)
 
@@ -17,7 +17,7 @@ print(f"{len(txts)} TXT files found")
 for txt in sorted(txts):
     text = open(os.path.join(root, txt)).read()
     text_length = len(text)
-    if text_length > 10:
+    if text_length > 20:
         lang, conf = langid.classify(text)
         lang_dict[lang] += 1
     else:
