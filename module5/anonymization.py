@@ -26,5 +26,5 @@ fake.add_provider(internet)
 print(fake.ipv4_public())
 
 #%%
-profile = fake.simple_profile()
+profile = fake_fr.simple_profile()
 pprint(profile)
