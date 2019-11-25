@@ -73,3 +73,4 @@ Install SpaCy from requirements then run this command to download French model: 
 
 ## Module 6
 
+`extraction.py`: extract text from various file types
