@@ -19,3 +19,4 @@ scikit_learn>=0.21.3
 seaborn>=0.9.0
 SPARQLWrapper>=1.8.4
 textract>=1.6.3
+wordcloud>=1.6.0
