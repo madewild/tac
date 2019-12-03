@@ -1,4 +1,4 @@
-"""Extract text from various file types"""
+"""Extract text from various types of files"""
 
 import os
 import textract
