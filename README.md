@@ -19,7 +19,7 @@ Then install Python dependencies with `pip install -r requirements.txt`
 
 ## Module 1
 
-`sql.py`: querying a simple relation database
+`sql.py`: querying a simple relational database
 
 `sparql.py`: querying the Wikidata SPARQL endpoint
 
