@@ -6,7 +6,7 @@ Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.
 
 It is recommended to run this code in a virtual environment: 
 
-```
+```bash
 git clone git@github.com:madewild/tac.git
 cd tac
 pip install virtualenv
