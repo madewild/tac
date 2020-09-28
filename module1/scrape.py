@@ -34,11 +34,15 @@ def download(urls, offset=0):
 
 def check(urls):
     """Check if all files have been downloaded"""
+    ok_count = 0
     for url in urls:
         filename = url.split("/")[-1]
         downloads = os.listdir('data/pdf')
         if filename not in downloads:
             print(f"{filename} is missing!")
+        else:
+            ok_count += 1
+    print(f"{ok_count} PDFs found on {len(urls)}!")
 
 if __name__ == "__main__":
     all_urls = get_urls()
