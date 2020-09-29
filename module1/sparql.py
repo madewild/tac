@@ -19,7 +19,7 @@ def get_rows():
         ?person wdt:P27 wd:Q31 .
         ?person wdt:P106 wd:Q82955 .
         ?person wdt:P569 ?dateBirth .
-        ?person wdt:P570 ?dateDeath .
+        OPTIONAL {?person wdt:P570 ?dateDeath .}
         SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
     }
     ORDER BY ?personLabel
