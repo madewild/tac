@@ -50,6 +50,8 @@ def show(rows, filter=None, n=10):
             death_year = death_date.year
         except ValueError:
             death_year = "????"
+        except KeyError:
+            death_year = "????"
         print(f"{row['personLabel']['value']} ({birth_year}-{death_year})")
 
 if __name__ == "__main__":
