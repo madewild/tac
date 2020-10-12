@@ -17,15 +17,17 @@ which pip
 
 Then install Python dependencies with `pip install -r requirements.txt`
 
+You can use either the scripts (\*.py) or the Jypyter Notebooks (\*.ipynb)
+
 ## Module 1
 
-`sql.py`: querying a simple relational database
+`s1_sql.py`: querying a simple relational database
 
-`sparql.py`: querying the Wikidata SPARQL endpoint
+`s2_sparql.py`: querying the Wikidata SPARQL endpoint
 
-`api.py`: playing with OpenStreetMap and EUcountries APIs
+`s3_api.py`: playing with OpenStreetMap and EUcountries APIs
 
-`scrape.py`: scraping the AVB to retrieve 2833 PDF bulletins
+`s4_scrape.py`: scraping the AVB to retrieve 2833 PDF bulletins
 
 ## Module 2
 

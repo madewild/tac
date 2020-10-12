@@ -33,11 +33,11 @@ def get_rows():
     print(f"\n{len(rows)} Belgian politicians found\n")
     return rows
 
-def show(rows, filter=None, n=10):
+def show(rows, name_filter=None, n=10):
     """Display n politicians (default=10)"""
     date_format = "%Y-%m-%dT%H:%M:%SZ"
-    if filter:
-        rows = [row for row in rows if filter in row['personLabel']['value'].lower()]
+    if name_filter:
+        rows = [row for row in rows if name_filter in row['personLabel']['value'].lower()]
     print(f"Displaying the first {n}:\n")
     for row in rows[:n]:
         try:
@@ -48,13 +48,15 @@ def show(rows, filter=None, n=10):
         try:
             death_date = dt.strptime(row['dateDeath']['value'], date_format)
             death_year = death_date.year
-        except ValueError:
+        except ValueError: # unknown death date
             death_year = "????"
+        except KeyError: # still alive
+            death_year = ""
         print(f"{row['personLabel']['value']} ({birth_year}-{death_year})")
 
 if __name__ == "__main__":
     args = parser.parse_args()
-    rows = get_rows()
-    filter = args.filter if args.filter else None
+    my_rows = get_rows()
+    my_filter = args.filter if args.filter else None
     number = args.number if args.number else 10
-    show(rows, filter, number)
+    show(my_rows, my_filter, number)

@@ -1,6 +1,7 @@
 """Scraping the AVB for PDFs of bulletins"""
 
 import os
+from pathlib import Path
 import re
 import time
 import sys
@@ -29,6 +30,7 @@ def download(urls, offset=0):
         start_time = time.time()
         response = requests.get(url)
         print(f"   done in {(time.time() - start_time):.1f} seconds")
+        Path("data/pdf").mkdir(parents=True, exist_ok=True)
         with open(f"data/pdf/{filename}", 'wb') as f:
             f.write(response.content)
 
