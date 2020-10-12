@@ -1,6 +1,7 @@
 """Scraping the AVB for PDFs of bulletins"""
 
 import os
+from pathlib import Path
 import re
 import time
 import sys
@@ -29,16 +30,21 @@ def download(urls, offset=0):
         start_time = time.time()
         response = requests.get(url)
         print(f"   done in {(time.time() - start_time):.1f} seconds")
+        Path("data/pdf").mkdir(parents=True, exist_ok=True)
         with open(f"data/pdf/{filename}", 'wb') as f:
             f.write(response.content)
 
 def check(urls):
     """Check if all files have been downloaded"""
+    ok_count = 0
     for url in urls:
         filename = url.split("/")[-1]
         downloads = os.listdir('data/pdf')
         if filename not in downloads:
             print(f"{filename} is missing!")
+        else:
+            ok_count += 1
+    print(f"{ok_count} PDFs found on {len(urls)}!")
 
 if __name__ == "__main__":
     all_urls = get_urls()

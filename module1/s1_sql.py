@@ -4,6 +4,7 @@ import argparse
 import os.path
 import sqlite3
 import zipfile
+from pathlib import Path
 
 import requests
 
@@ -14,6 +15,7 @@ args = parser.parse_args()
 if not os.path.isfile('data/db/chinook.db'): 
     url = "https://www.sqlitetutorial.net/wp-content/uploads/2018/03/chinook.zip"
     filename = url.split("/")[-1]
+    Path("data/db").mkdir(parents=True, exist_ok=True)
     save_loc = f"data/db/{filename}"
     response = requests.get(url)
 
