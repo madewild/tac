@@ -31,29 +31,29 @@ You can use either the scripts (\*.py) or the Jypyter Notebooks (\*.ipynb)
 
 ## Module 2
 
-`s1_convert.sh`: bash script to convert PDFs to TXTs, move them to dedicated folder and aggregate them in single big text file
+`convert.sh`: bash script to convert PDFs to TXTs, move them to dedicated folder and aggregate them in single big text file
 
-`s2_explore.py`: playing with various categories (city, year, decade, type...)
+`explore.py`: playing with various categories (city, year, decade, type...)
 
-`s3_freq.py`: basic frenquency analysis, hapaxes, long words...
+`freq.py`: basic frenquency analysis, hapaxes, long words...
 
 ## Module 3
 
 ### Keyword extraction
 
-`s1_keyword.py`: using YAKE to extract French keywords in each text file
+`keyword.py`: using YAKE to extract French keywords in each text file
 
-`s2_wordcloud.sh`: generating a wordcloud for a given year (calling `filter.py` in the background)
+`wordcloud.sh`: generating a wordcloud for a given year (calling `filter.py` in the background)
 
 ### Named-entity recognition
 
 Install SpaCy from requirements then run this command to download French model: `python -m spacy download fr_core_news_sm`
 
-`s3_ner.py`: perform NER with SpaCy FR model
+`ner.py`: perform NER with SpaCy FR model
 
 ### Sentiment analysis
 
-`s4_sentiment.py`: analyse positive/negative sentences with textblob
+`sentiment.py`: analyse positive/negative sentences with textblob
 
 ## Module 4
 
