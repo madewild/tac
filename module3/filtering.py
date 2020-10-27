@@ -27,5 +27,5 @@ def filtering(year):
 
 
 if __name__ == '__main__':
-    year = sys.argv[1]
-    filtering(year)
+    chosen_year = sys.argv[1]
+    filtering(chosen_year)
