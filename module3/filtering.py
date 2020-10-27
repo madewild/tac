@@ -13,17 +13,22 @@ sw += ["les", "plus", "cette", "fait", "faire", "être", "deux", "comme", "dont"
 sw = set(sw)
 
 
-def filtering(year):
-    path = f"{year}.txt"
-    output = open(f"{year}_keywords.txt", "w")
-
-    with open(path) as f:
+def filtering(year, folder=None):
+    if folder is None:
+        input_path = f"{year}.txt"
+        output_path = f"{year}_keywords.txt"
+    else:
+        input_path = f"{folder}/{year}.txt"
+        output_path = f"{folder}/{year}_keywords.txt"
+    output = open(output_path, "w")
+    with open(input_path) as f:
         text = f.read()
         words = nltk.wordpunct_tokenize(text)
         kept = [w.lower() for w in words if len(
             w) > 2 and w.isalpha() and w.lower() not in sw]
         kept_string = " ".join(kept)
         output.write(kept_string)
+    return f'Output has been written in {output_path}!'
 
 
 if __name__ == '__main__':
