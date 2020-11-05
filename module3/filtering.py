@@ -15,9 +15,9 @@ sw = set(sw)
 
 def filtering(year):
     path = f"{year}.txt"
-    output = open(f"{year}_keywords.txt", "w")
+    output = open(f"{year}_keywords.txt", "w", encoding='utf-8')
 
-    with open(path) as f:
+    with open(path, encoding='utf-8') as f:
         text = f.read()
         words = nltk.wordpunct_tokenize(text)
         kept = [w.lower() for w in words if len(
