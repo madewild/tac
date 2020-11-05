@@ -14,8 +14,8 @@ sw = set(sw)
 
 
 def filtering(year):
-    path = f"{year}.txt"
-    output = open(f"{year}_keywords.txt", "w", encoding='utf-8')
+    path = f"data/{year}.txt"
+    output = open(f"data/{year}_keywords.txt", "w", encoding='utf-8')
 
     with open(path, encoding='utf-8') as f:
         text = f.read()
