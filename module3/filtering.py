@@ -13,9 +13,9 @@ sw += ["les", "plus", "cette", "fait", "faire", "être", "deux", "comme", "dont"
 sw = set(sw)
 
 
-def filtering(year):
-    path = f"data/{year}.txt"
-    output = open(f"data/{year}_keywords.txt", "w", encoding='utf-8')
+def filtering(dpath, year):
+    path = f"{dpath}/{year}.txt"
+    output = open(f"{dpath}/{year}_keywords.txt", "w", encoding='utf-8')
 
     with open(path, encoding='utf-8') as f:
         text = f.read()
@@ -27,5 +27,6 @@ def filtering(year):
 
 
 if __name__ == '__main__':
-    chosen_year = sys.argv[1]
-    filtering(chosen_year)
+    data_path = sys.argv[1]
+    chosen_year = sys.argv[2]
+    filtering(data_path, chosen_year)
