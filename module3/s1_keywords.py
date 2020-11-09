@@ -15,6 +15,6 @@ for f in sorted(files):
         kept = []
         for score, kw in keywords:
             words = kw.split()
-            if len(words) > 1 and kw not in ignored:
+            if len(words) > 1 and kw not in ignored: # only bigrams and more
                 kept.append(kw)
         print(f"{f} mentions these keywords: {', '.join(kept)}...")
