@@ -23,3 +23,6 @@ textract>=1.6.3
 wordcloud>=1.6.0
 ipykernel>=5.3.4
 pylint>=2.6.0
+scikit-plot==0.3.7
+jupyter==1.0.0
+Unidecode==1.1.1

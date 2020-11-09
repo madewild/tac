@@ -43,7 +43,7 @@ You can use either the scripts (\*.py) or the Jypyter Notebooks (\*.ipynb)
 
 `s1_keyword.py`: using YAKE to extract French keywords in each text file
 
-`s2_wordcloud.sh`: generating a wordcloud for a given year (calling `filter.py` in the background)
+`s2_wordcloud.sh`: generating a wordcloud for a given year (calling `filtering.py` in the background)
 
 ### Named-entity recognition
 
