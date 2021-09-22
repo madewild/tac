@@ -17,7 +17,7 @@ which pip
 
 Then install Python dependencies with `pip install -r requirements.txt`
 
-You can use either the scripts (\*.py) or the Jypyter Notebooks (\*.ipynb)
+You can use either the scripts (\*.py) or the Jupyter Notebooks (\*.ipynb)
 
 ## Module 1
 
