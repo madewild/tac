@@ -9,7 +9,7 @@ It is recommended to run this code in a virtual environment:
 ```bash
 git clone git@github.com:madewild/tac.git
 cd tac
-pip install virtualenv (or pip3 install virtualenv)
+pip install virtualenv
 virtualenv venv --python=python3
 source venv/bin/activate
 which pip
