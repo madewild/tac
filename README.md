@@ -1,15 +1,15 @@
 # TAC
 
-Course material for "Traitement automatique de corpus" (STIC-B545) taught at [ULB](https://ulb.be)
+Course material for "Traitement automatique de corpus" (STIC-B545) taught at [ULB](https://ulb.be).
 
-Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.org/dev/peps/pep-0498/) (3.7 or 3.8 is better)
+Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.org/dev/peps/pep-0498/) (3.9 or even 3.10 is better).
 
 It is recommended to run this code in a virtual environment:
 
 ```bash
 git clone git@github.com:madewild/tac.git
 cd tac
-pip install virtualenv
+pip install virtualenv (or pip3 install virtualenv)
 virtualenv venv --python=python3
 source venv/bin/activate
 which pip
