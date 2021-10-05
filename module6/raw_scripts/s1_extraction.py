@@ -6,5 +6,8 @@ import textract
 path = 'module6/dummy/'
 files = os.listdir(path)
 for f in sorted(files):
-    text = textract.process(path+f)
-    print(text.decode('utf-8').strip())
+    try:
+        text = textract.process(os.path.join(path, f))
+        print(text.decode('utf-8').strip())
+    except Exception as e:
+        print(os.path.join(path, f), e)
