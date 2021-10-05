@@ -20,20 +20,20 @@ def print_coord(address):
 
 def print_info(country_name):
     """Retrieve country info from REST API"""
-    base_url = "https://restcountries.eu/rest/v2/"
+    base_url = "http://restcountries.com/v3.1/"
     name_url = base_url + "name/"
     code_url = base_url + "alpha/"
     resp = requests.get(name_url + country_name)
     try:
-        country = json.loads(resp.text)[0]
+        country = resp.json()[0]
         languages = country['languages']
-        print(f"Languages: {', '.join([lang['name'] for lang in languages])}")
+        print(f"Languages: {', '.join([lang for lang in languages.values()])}")
         border_codes = country['borders']
         border_names = []
         for code in border_codes:
             resp = requests.get(code_url + code)
-            border_country = json.loads(resp.text)
-            border_name = border_country["name"]
+            border_country = resp.json()[0]
+            border_name = border_country["name"]["common"]
             border_names.append(border_name)
         print(f"Borders: {', '.join(border_names)}")
     except KeyError:
