@@ -33,9 +33,11 @@ virtualenv venv --python=python3
 source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
+python -m spacy download fr_core_news_sm
 ```
 
-In that way you can use the scripts `\*.py` (in the subdirectory `raw_scripts` of each module)
+In that way you can use the scripts `\*.py` (in the subdirectory `raw_scripts` of each module).
+They should be executed from the root of this repository
 
 ## Module 1
 
