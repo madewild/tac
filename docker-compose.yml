@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/app
+      # - ./module2:/var/www/module2
+      # - ./module3:/var/www/module3
+      # - ./module4:/var/www/module4
+      # - ./module5:/var/www/module5
+      # - ./module6:/var/www/module6
+      # - ./data:/var/www/data
+    mem_limit: 2G
+    cpus: 1
+
