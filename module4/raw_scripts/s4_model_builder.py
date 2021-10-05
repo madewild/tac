@@ -28,6 +28,6 @@ phrases = Phrases(sentences)
 bigram = Phraser(phrases)
 trigram = Phrases(bigram[sentences])
 corpus = list(trigram[bigram[sentences]])
-model = Word2Vec(corpus, size=32, window=5, min_count=5, workers=4, iter=5)
+model = Word2Vec(corpus, vector_size=32, window=5, min_count=5, workers=4, epochs=5)
 outfile = f"data/bulletins.model"
 model.save(outfile)
