@@ -6,9 +6,9 @@ Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.
 
 There are two ways to run this code
 
-### Recommended: Docker
+## Recommended: Docker
 
-- Install Docker: https://docs.docker.com/get-docker/
+- Install Docker: <https://docs.docker.com/get-docker/>
 - Start Docker
 
 ```bash
@@ -18,11 +18,11 @@ docker-compose build
 docker-compose up
 ```
 
-Then Everything is available here: http://localhost:8888/lab
+Then Everything is available here: <http://localhost:8888/lab>
 
 In that tway you can use the `\*.ipynb` files (at the root of each module)
 
-### Traditional Pythonic way
+## Traditional Pythonic way
 
 It is recommended to run this code in a virtual environment:
 
