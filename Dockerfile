@@ -28,7 +28,7 @@ RUN apt-get -y install libpulse-dev
 RUN pip install --upgrade pip
 RUN pip install jupyter -U && pip install jupyterlab
 RUN pip install --no-cache-dir -r requirements.txt
-RUN python -m spacy download "fr_core_news_sm"
+RUN python -m spacy download "fr_core_news_md"
 
 EXPOSE 8888
 
