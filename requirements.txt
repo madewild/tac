@@ -21,6 +21,7 @@ EbookLib==0.17.1
 elasticsearch==7.15.0
 elasticsearch-dsl==7.4.0
 entrypoints==0.3
+et-xmlfile==1.1.0
 extract-msg==0.28.7
 Faker==8.16.0
 gensim==4.1.2
@@ -49,7 +50,7 @@ mccabe==0.6.1
 murmurhash==1.0.5
 nest-asyncio==1.5.1
 networkx==2.6.3
-nltk==3.6.3
+nltk==3.6.4
 numpy==1.21.2
 olefile==0.46
 openpyxl==3.0.9
@@ -74,6 +75,7 @@ pydantic==1.8.2
 Pygments==2.10.0
 pylint==2.11.1
 pyparsing==2.4.7
+pytesseract==0.3.8
 pytest==6.2.5
 python-dateutil==2.8.2
 python-pptx==0.6.21
@@ -119,4 +121,3 @@ wrapt==1.12.1
 xlrd==1.2.0
 XlsxWriter==3.0.1
 yake==0.4.8
-pytesseract==0.3.8
