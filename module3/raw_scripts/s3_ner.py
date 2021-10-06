@@ -6,7 +6,7 @@ import sys
 import spacy
 from spacy.lang.fr.examples import sentences 
 
-nlp = spacy.load('fr_core_news_sm')
+nlp = spacy.load('fr_core_news_md')
 
 def test():
     """Basic test on sample sentences"""
