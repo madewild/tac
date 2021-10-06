@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/app
+    mem_limit: 4G
+    cpus: 1
+

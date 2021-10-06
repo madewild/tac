@@ -6,7 +6,7 @@ import sys
 import spacy
 from spacy.lang.fr.examples import sentences 
 
-nlp = spacy.load('fr_core_news_sm')
+nlp = spacy.load('fr_core_news_md')
 
 def test():
     """Basic test on sample sentences"""
@@ -21,7 +21,7 @@ def test():
             print(f"'{doc.text}' contains no entities")
 
 def search():
-    text = open("data/all.txt").read()[:1000000]
+    text = open("data/all.txt").read()[:100000]
     doc = nlp(text)
     people = defaultdict(int)
     for ent in doc.ents:
