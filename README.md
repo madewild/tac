@@ -20,7 +20,7 @@ docker-compose up
 
 Then Everything is available here: <http://localhost:8888/lab>
 
-In that tway you can use the `\*.ipynb` files (at the root of each module)
+In that way you can use the `\*.ipynb` files (at the root of each module)
 
 ## Traditional Pythonic way
 
@@ -55,7 +55,7 @@ They should be executed from the root of this repository
 
 `s2_explore`: playing with various categories (city, year, decade, type...)
 
-`s3_freq`: basic frenquency analysis, hapaxes, long words...
+`s3_freq`: basic frequency analysis, hapaxes, long words...
 
 ## Module 3
 
