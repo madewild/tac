@@ -77,24 +77,21 @@ Install SpaCy from requirements then run this command to download French model: 
 
 ## Module 4
 
-`classification`: supervised classification of 20 newsgroups
+`s1_classification`: supervised classification of 20 newsgroups
 
-`clustering`: unsupervised clustering with k-means
+`s2_clustering`: unsupervised clustering with k-means
 
-`sentence_tokenizer`: split big text into sentences
+`s3_sentence_tokenizer`: split big text into sentences
 
-`model_builder`: train word2vec model on corpus
+`s4_word_embeddings`: train and explore a word2vec model on corpus
 
-`model_explorer`: explore similarity between vectors
 
 ## Module 5
 
-`language_detection`: language identification with langid
+`s1_language_detection`: language identification with langid
 
-`anonymization`: de-identification of data with Faker
+`s2_anonymization`: de-identification of data with Faker
 
 ## Module 6
 
-`extraction`: extract text from various file types
-
-`htr`: script for handwritten text recognition
+`s1_extraction`: extract text from various file types
