@@ -4,7 +4,7 @@ Course material for "Traitement automatique de corpus" ([STIC-B545](https://www.
 
 Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.org/dev/peps/pep-0498/) (3.9 or even 3.10 is better).
 
-There are two ways to run this code
+There are two ways to run this code:
 
 ## Recommended: Docker
 
@@ -18,9 +18,9 @@ docker-compose build
 docker-compose up
 ```
 
-Then Everything is available here: <http://localhost:8888/lab>
+Then everything will be available here: <http://localhost:8888/lab>
 
-In that way you can use the `\*.ipynb` files (at the root of each module)
+In that way you can use the Jupyter notebooks (`\*.ipynb` files) at the root of each module and ignore the raw scripts.
 
 ## Traditional Pythonic way
 
@@ -37,7 +37,7 @@ python -m spacy download fr_core_news_md
 ```
 
 In that way you can use the scripts `\*.py` (in the subdirectory `raw_scripts` of each module).
-They should be executed from the root of this repository
+They should be executed from the root of this repository.
 
 ## Module 1
 
