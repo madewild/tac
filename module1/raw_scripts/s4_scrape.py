@@ -3,8 +3,8 @@
 import os
 from pathlib import Path
 import re
-import time
 import sys
+import time
 
 import requests
 
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         task = sys.argv[1]
     except IndexError:
         print("No task provided, please use either 'download' or 'check'")
-        exit()
+        sys.exit()
     if task == "download":
         try:
             start_from = int(sys.argv[2])
@@ -64,4 +64,4 @@ if __name__ == "__main__":
         check(all_urls)
     else:
         print("Unknown task, please use either 'download' or 'check'")
-        exit()
+        sys.exit()
