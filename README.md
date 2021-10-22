@@ -85,7 +85,6 @@ Install SpaCy from requirements then run this command to download French model: 
 
 `s4_word_embeddings`: train and explore a word2vec model on corpus
 
-
 ## Module 5
 
 `s1_language_detection`: language identification with langid
