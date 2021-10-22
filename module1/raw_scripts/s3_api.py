@@ -27,7 +27,7 @@ def print_info(country_name):
     try:
         country = resp.json()[0]
         languages = country['languages']
-        print(f"Languages: {', '.join([lang for lang in languages.values()])}")
+        print(f"Languages: {', '.join(languages.values())}")
         border_codes = country['borders']
         border_names = []
         for code in border_codes:
@@ -44,14 +44,14 @@ if __name__ == "__main__":
         service = sys.argv[1]
         if service == "coord":
             try:
-                address = sys.argv[2]
-                print_coord(address)
+                my_address = sys.argv[2]
+                print_coord(my_address)
             except IndexError:
                 print("Please enter an address")
         elif service == "info":
             try:
-                country_name = sys.argv[2]
-                print_info(country_name)
+                my_country_name = sys.argv[2]
+                print_info(my_country_name)
             except IndexError:
                 print("Please enter a country name")
         else:
