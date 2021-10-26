@@ -1,10 +1,10 @@
 # TAC
 
-Course material for "Traitement automatique de corpus" (STIC-B545) taught at [ULB](https://ulb.be).
+Course material for "Traitement automatique de corpus" ([STIC-B545](https://www.ulb.be/fr/programme/stic-b545)) taught at [ULB](https://ulb.be).
 
 Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.org/dev/peps/pep-0498/) (3.9 or even 3.10 is better).
 
-There are two ways to run this code
+There are two ways to run this code:
 
 ## Recommended: Docker
 
@@ -18,9 +18,9 @@ docker-compose build
 docker-compose up
 ```
 
-Then Everything is available here: <http://localhost:8888/lab>
+Then everything will be available here: <http://localhost:8888/lab>
 
-In that tway you can use the `\*.ipynb` files (at the root of each module)
+In that way you can use the Jupyter notebooks (`\*.ipynb` files) at the root of each module and ignore the raw scripts.
 
 ## Traditional Pythonic way
 
@@ -37,7 +37,7 @@ python -m spacy download fr_core_news_md
 ```
 
 In that way you can use the scripts `\*.py` (in the subdirectory `raw_scripts` of each module).
-They should be executed from the root of this repository
+They should be executed from the root of this repository.
 
 ## Module 1
 
@@ -55,7 +55,7 @@ They should be executed from the root of this repository
 
 `s2_explore`: playing with various categories (city, year, decade, type...)
 
-`s3_freq`: basic frenquency analysis, hapaxes, long words...
+`s3_freq`: basic frequency analysis, hapaxes, long words...
 
 ## Module 3
 
@@ -77,24 +77,20 @@ Install SpaCy from requirements then run this command to download French model: 
 
 ## Module 4
 
-`classification`: supervised classification of 20 newsgroups
+`s1_classification`: supervised classification of 20 newsgroups
 
-`clustering`: unsupervised clustering with k-means
+`s2_clustering`: unsupervised clustering with k-means
 
-`sentence_tokenizer`: split big text into sentences
+`s3_sentence_tokenizer`: split big text into sentences
 
-`model_builder`: train word2vec model on corpus
-
-`model_explorer`: explore similarity between vectors
+`s4_word_embeddings`: train and explore a word2vec model on corpus
 
 ## Module 5
 
-`language_detection`: language identification with langid
+`s1_language_detection`: language identification with langid
 
-`anonymization`: de-identification of data with Faker
+`s2_anonymization`: de-identification of data with Faker
 
 ## Module 6
 
-`extraction`: extract text from various file types
-
-`htr`: script for handwritten text recognition
+`s1_extraction`: extract text from various file types
