@@ -89,7 +89,9 @@ Install SpaCy from requirements then run this command to download French model: 
 
 `s1_language_detection`: language identification with langid
 
-`s2_anonymization`: de-identification of data with Faker
+`s2_machine_translation`: machine translation with transformers
+
+`s3_anonymization`: de-identification of data with Faker
 
 ## Module 6
 
