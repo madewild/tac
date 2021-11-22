@@ -96,4 +96,5 @@ Install SpaCy from requirements then run this command to download French model: 
 ## Module 6
 
 `s1_extraction`: extract text from various file types
+
 `s2_fuzzy_matching`: correcting OCR errors with edit distance
