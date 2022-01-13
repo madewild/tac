@@ -50,7 +50,7 @@ mccabe==0.6.1
 murmurhash==1.0.5
 nest-asyncio==1.5.1
 networkx==2.6.3
-nltk==3.6.4
+nltk==3.6.6
 numpy==1.21.2
 olefile==0.46
 openpyxl==3.0.9
