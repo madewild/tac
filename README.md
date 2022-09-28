@@ -7,7 +7,7 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
 
 1. Créez un compte Github et générez un `fork` du répertoire `tac`. Votre version du répertoire se trouvera alors à l'adresse `https://github.com/<YOUR-GITHUB-ID>/tac`
 2. Téléchargez et installez une version récente de [Python](https://www.python.org/downloads/) (>= 3.9)
-    - !! Pour les utilisateurs Windows, au moment de l'installation, cochez la case "Add Python 3.XX to PATH"
+    - !! Pour les utilisateurs Windows, au moment de l'installation, cochez la case "Add Python 3.XX to PATH" et préférez installer Python à la racine du disque (C:\Python310) via le custom install.
 3. Téléchargez et installez [Visual Studio Code](https://code.visualstudio.com/)
 4. Téléchargez et installez [Git](https://git-scm.com/downloads)
 5. Dans Visual Studio Code, ouvrez un terminal (`Terminal > New Terminal`) et déplacez-vous dans le dossier qui contiendra les documents du cours (utilisez la commande `cd`)
@@ -16,11 +16,12 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
 Windows:
 
 ```bash
-Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 git clone https://github.com/<YOUR-GITHUB-ID>/tac
 cd tac
+pip install virtualenv
 virtualenv tac_venv --python=python3
-pip install --upgrade pip
+.\tac_venv\Scripts\activate
 pip install -r requirements.txt
 python -m spacy download fr_core_news_md
 ```
@@ -32,7 +33,6 @@ git clone https://github.com/<YOUR-GITHUB-ID>/tac
 cd tac
 virtualenv tac_venv --python=python3
 source tac_venv/bin/activate
-pip install --upgrade pip
 pip install -r requirements.txt
 python -m spacy download fr_core_news_md
 ```
