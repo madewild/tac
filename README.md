@@ -31,6 +31,7 @@ Linux / MacOS:
 ```bash
 git clone https://github.com/<YOUR-GITHUB-ID>/tac
 cd tac
+pip install virtualenv
 virtualenv tac_venv --python=python3
 source tac_venv/bin/activate
 pip install -r requirements.txt
