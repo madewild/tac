@@ -66,7 +66,7 @@ platformdirs==2.4.0
 pluggy==1.0.0
 preshed==3.0.5
 prompt-toolkit==3.0.20
-protobuf==3.18.0
+protobuf==3.18.3
 ptyprocess==0.7.0
 py==1.10.0
 pycountry==20.7.3
