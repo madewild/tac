@@ -1,100 +1,100 @@
 # TAC
 
-Course material for "Traitement automatique de corpus" ([STIC-B545](https://www.ulb.be/fr/programme/stic-b545)) taught at [ULB](https://ulb.be).
+Ce répertoire contient le matériel pour le cours de "Traitement automatique de corpus" ([STIC-B545](https://www.ulb.be/fr/programme/stic-b545)) donné à l'[ULB](https://ulb.be) pour l'année académique 2022-2023.
 
-Caution: Python 3.6 or higher required to handle [f-strings](https://www.python.org/dev/peps/pep-0498/) (3.9 or even 3.10 is better).
 
-There are two ways to run this code:
+## Installation
 
-## Recommended: Docker
+1. Créez un compte Github et générez un `fork` du répertoire `tac`. Votre version du répertoire se trouvera alors à l'adresse `https://github.com/<YOUR-GITHUB-ID>/tac`
+2. Téléchargez et installez une version récente de [Python](https://www.python.org/downloads/) (>= 3.9)
+    - !! Pour les utilisateurs Windows, au moment de l'installation, cochez la case "Add Python 3.XX to PATH" et préférez installer Python à la racine du disque (C:\Python310) via le custom install.
+3. Téléchargez et installez [Visual Studio Code](https://code.visualstudio.com/)
+4. Téléchargez et installez [Git](https://git-scm.com/downloads)
+5. Dans Visual Studio Code, ouvrez un terminal (`Terminal > New Terminal`) et déplacez-vous dans le dossier qui contiendra les documents du cours (utilisez la commande `cd`)
+6. Exécutez dans l'ordre les commandes suivantes:
 
-- Install Docker: <https://docs.docker.com/get-docker/>
-- Start Docker
-
-```bash
-git clone git@github.com:madewild/tac.git
-cd tac
-docker-compose build
-docker-compose up
-```
-
-Then everything will be available here: <http://localhost:8888/lab>
-
-In that way you can use the Jupyter notebooks (`\*.ipynb` files) at the root of each module and ignore the raw scripts.
-
-## Traditional Pythonic way
-
-It is recommended to run this code in a virtual environment:
+Windows:
 
 ```bash
-git clone git@github.com:madewild/tac.git
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+git clone https://github.com/<YOUR-GITHUB-ID>/tac
 cd tac
-virtualenv venv --python=python3
-source venv/bin/activate
-pip install --upgrade pip
+pip install virtualenv
+virtualenv tac_venv --python=python3
+.\tac_venv\Scripts\activate
 pip install -r requirements.txt
 python -m spacy download fr_core_news_md
 ```
 
-In that way you can use the scripts `\*.py` (in the subdirectory `raw_scripts` of each module).
-They should be executed from the root of this repository.
+Linux / MacOS:
+
+```bash
+git clone https://github.com/<YOUR-GITHUB-ID>/tac
+cd tac
+pip install virtualenv
+virtualenv tac_venv --python=python3
+source tac_venv/bin/activate
+pip install -r requirements.txt
+python -m spacy download fr_core_news_md
+```
+
+7. Vous pouvez maintenant utiliser et exécuter le code qui se trouve dans les notebooks (fichiers `.ipynb`) en choisissant l'environnement `tacvenv` (en haut à droite de votre écran)
+
 
 ## Module 1
 
-`s1_sql`: querying a simple relational database
+`s1_sql`: requêtes dans une base de données SQL
 
-`s2_sparql`: querying the Wikidata SPARQL endpoint
+`s2_sparql`: requêtes sur l'endpoint SPARQL de _Wikidata_
 
-`s3_api`: playing with OpenStreetMap and EUcountries APIs
+`s3_api`: requêtes sur les APIs _OpenStreetMap_ et _EUcountries_ 
 
-`s4_scrape`: scraping the AVB to retrieve 2833 PDF bulletins
+`s4_scrape`: scraping d'articles dans les archives du journal _Le Soir_
 
 ## Module 2
 
-`s1_convert`: script to convert PDFs to TXTs, move them to dedicated folder and aggregate them in single big text file
+`s1_convert`: conversion de fichiers `.pdf` en fichier `.txt`, et aggrégation en un long fichier texte
 
-`s2_explore`: playing with various categories (city, year, decade, type...)
+`s2_explore`: statistiques de fréquences de fichiers
 
-`s3_freq`: basic frequency analysis, hapaxes, long words...
+`s3_freq`: Analyse des fréquences, des _hapax_, recherche des mots les plus longs...
 
 ## Module 3
 
-### Keyword extraction
+### Extraction de mots-cls
 
-`s1_keyword`: using YAKE to extract French keywords in each text file
+`s1_keyword`: utilisation de YAKE pour extraire des keywords au sein de chacun des fichiers
 
-`s2_wordcloud`: generating a wordcloud for a given year (calling `filtering.py` in the background)
+`s2_wordcloud`: génération d'un nuage de mots
 
-### Named-entity recognition
+### Reconnaissance d'entités nommées
 
-Install SpaCy from requirements then run this command to download French model: `python -m spacy download fr_core_news_sm`
+`s3_ner`: reconnaissance d'entités à l'aide d'un modèle SpaCy
 
-`s3_ner`: perform NER with SpaCy FR model
+### Analyse de sentiments
 
-### Sentiment analysis
-
-`s4_sentiment`: analyse positive/negative sentences with textblob
+`s4_sentiment`: analyse de sentiment à l'aide de Textblob
 
 ## Module 4
 
-`s1_classification`: supervised classification of 20 newsgroups
+`s1_classification`: classification supervisée de textes
 
-`s2_clustering`: unsupervised clustering with k-means
+`s2_clustering`: clustering non supervisé à l'aide de K-means
 
-`s3_sentence_tokenizer`: split big text into sentences
+`s3_sentence_tokenizer`: séparation de textes en phrases
 
-`s4_word_embeddings`: train and explore a word2vec model on corpus
+`s4_word_embeddings`: exploration du modèle Word2Vec sur un corpus
 
 ## Module 5
 
-`s1_language_detection`: language identification with langid
+`s1_language_detection`: identification de la langue d'un texte
 
-`s2_machine_translation`: machine translation with transformers
+`s2_machine_translation`: traduction automatique à l'aide de modèle _transformers_
 
-`s3_anonymization`: de-identification of data with Faker
+`s3_anonymization`: anonymisation/pseudonymisation de données with Faker
 
 ## Module 6
 
-`s1_extraction`: extract text from various file types
+`s1_extraction`: extraction de texte à partir de formats variés
 
-`s2_fuzzy_matching`: correcting OCR errors with edit distance
+`s2_fuzzy_matching`: correction d'erreurs OCR à l'aide de distances d'édition
