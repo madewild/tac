@@ -5,7 +5,7 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
 
 ## Installation
 
-1. Créez un compte Github et générez un `fork` du répertoire `tac`. Votre version du répertoire se trouvera alors à l'adresse `https://github.com/<YOUR-GITHUB-ID>/tac`
+1. Créez un compte Github et générez un `fork` du répertoire [tac](https://github.com/madewild/tac). Votre version du répertoire se trouvera alors à l'adresse `https://github.com/<YOUR-GITHUB-ID>/tac`
 2. Téléchargez et installez une version récente de [Python](https://www.python.org/downloads/) (>= 3.9)
     - !! Pour les utilisateurs Windows, au moment de l'installation, cochez la case "Add Python 3.XX to PATH" et préférez installer Python à la racine du disque (C:\Python310) via le custom install.
 3. Téléchargez et installez [Visual Studio Code](https://code.visualstudio.com/)
@@ -32,13 +32,14 @@ Linux / MacOS:
 git clone https://github.com/<YOUR-GITHUB-ID>/tac
 cd tac
 pip install virtualenv
-virtualenv tac_venv --python=python3
+virtualenv tac_venv --python=python3 (ou: python3 -m venv tac_venv)
 source tac_venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
 python -m spacy download fr_core_news_md
 ```
 
-7. Vous pouvez maintenant utiliser et exécuter le code qui se trouve dans les notebooks (fichiers `.ipynb`) en choisissant l'environnement `tacvenv` (en haut à droite de votre écran)
+7. Vous pouvez maintenant utiliser et exécuter le code qui se trouve dans les notebooks (fichiers `.ipynb`) en choisissant l'environnement `tac_venv` (en haut à droite de votre écran)
 
 
 ## Module 1
