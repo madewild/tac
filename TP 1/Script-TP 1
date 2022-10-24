@@ -1,0 +1,3 @@
+# Retrieve results from SPARQL (Récupérer les résultats de SPARQL)
+endpoint (extrémité) = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
+sparql = SPARQLWrapper(endpoint)
