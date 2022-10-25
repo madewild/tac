@@ -8,6 +8,7 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
 1. Créez un compte Github et générez un `fork` du répertoire [tac](https://github.com/madewild/tac). Votre version du répertoire se trouvera alors à l'adresse `https://github.com/<YOUR-GITHUB-ID>/tac`
 2. Téléchargez et installez une version récente de [Python](https://www.python.org/downloads/) (>= 3.9)
     - !! Pour les utilisateurs Windows, au moment de l'installation, cochez la case "Add Python 3.XX to PATH" et préférez installer Python à la racine du disque (C:\Python310) via le custom install.
+    - !! Si votre ordinateur ne supporte pas les versions récentes de Python, vous pouvez utiliser une machine virtuelle Docker. Vous trouverez les instructions [ici](./Installation_Docker.md)
 3. Téléchargez et installez [Visual Studio Code](https://code.visualstudio.com/)
 4. Téléchargez et installez [Git](https://git-scm.com/downloads)
 5. Dans Visual Studio Code, ouvrez un terminal (`Terminal > New Terminal`) et déplacez-vous dans le dossier qui contiendra les documents du cours (utilisez la commande `cd`)
@@ -40,7 +41,6 @@ python -m spacy download fr_core_news_md
 ```
 
 7. Vous pouvez maintenant utiliser et exécuter le code qui se trouve dans les notebooks (fichiers `.ipynb`) en choisissant l'environnement `tac_venv` (en haut à droite de votre écran)
-
 
 ## Module 1
 
