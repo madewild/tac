@@ -36,6 +36,7 @@ pip install virtualenv
 virtualenv tac_venv --python=python3 (ou: python3 -m venv tac_venv)
 source tac_venv/bin/activate
 pip install --upgrade pip
+pip install wheel
 pip install -r requirements.txt
 python -m spacy download fr_core_news_md
 ```
