@@ -2,7 +2,6 @@
 
 Ce répertoire contient le matériel pour le cours de "Traitement automatique de corpus" ([STIC-B545](https://www.ulb.be/fr/programme/stic-b545)) donné à l'[ULB](https://ulb.be) pour l'année académique 2023-2024.
 
-
 ## Installation
 
 1. Créez un compte Github et générez un `fork` du répertoire [tac](https://github.com/madewild/tac). Votre version du répertoire se trouvera alors à l'adresse `https://github.com/<YOUR-GITHUB-ID>/tac`
@@ -12,7 +11,7 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
 3. Téléchargez et installez [Visual Studio Code](https://code.visualstudio.com/)
 4. Téléchargez et installez [Git](https://git-scm.com/downloads)
 5. Dans Visual Studio Code, ouvrez un terminal (`Terminal > New Terminal`) et déplacez-vous dans le dossier qui contiendra les documents du cours (utilisez la commande `cd`)
-6. Exécutez dans l'ordre les commandes suivantes:
+6. Exécutez les commandes suivantes **une ligne à la fois**:
 
 Windows:
 
@@ -49,7 +48,7 @@ python -m spacy download fr_core_news_md
 
 `s2_sparql`: requêtes sur l'endpoint SPARQL de _Wikidata_
 
-`s3_api`: requêtes sur les APIs _OpenStreetMap_ et _EUcountries_ 
+`s3_api`: requêtes sur les APIs _OpenStreetMap_ et _EUcountries_
 
 `s4_scrape`: scraping d'articles dans les archives du journal _Le Soir_
 
