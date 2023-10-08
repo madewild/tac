@@ -8,10 +8,22 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
 2. Téléchargez et installez une version récente de [Python](https://www.python.org/downloads/) (>= 3.9)
     - !! Pour les utilisateurs Windows, au moment de l'installation, cochez la case "Add Python 3.XX to PATH" et préférez installer Python à la racine du disque (C:\Python310) via le custom install.
     - !! Si votre ordinateur ne supporte pas les versions récentes de Python, vous pouvez utiliser une machine virtuelle Docker. Vous trouverez les instructions [ici](./Installation_Docker.md)
-3. Téléchargez et installez [Visual Studio Code](https://code.visualstudio.com/)
-4. Téléchargez et installez [Git](https://git-scm.com/downloads)
-5. Dans Visual Studio Code, ouvrez un terminal (`Terminal > New Terminal`) et déplacez-vous dans le dossier qui contiendra les documents du cours (utilisez la commande `cd`)
-6. Exécutez les commandes suivantes **une ligne à la fois**:
+3. Téléchargez et installez [Git](https://git-scm.com/downloads)
+4. Téléchargez et installez [Visual Studio Code](https://code.visualstudio.com/)
+5. Installez un compilateur C++:
+    - Sur Windows:
+        - Ouvrez la page "Downloads" Open the Visual Studio downloads page in your browser.
+        - Cliquez sur [ce lien](https://aka.ms/vs/17/release/vs_BuildTools.exe). Le téléchargement d'un fichier `.exe` se lancera automatiquement.
+        - Exécutez le fichier `.exe` téléchargé
+        - Durant l'installation, sélecttionnez `C++ Build Tools` → `Install`.
+        - Redémarrez votre machine.
+    - Sur MacOS, ouvrez un terminal et tapez la commande suivante:
+        ```bash
+        xcode-select --install
+        ```
+    - Sur Linux, installez `gcc` via votre gestionnaire de packets
+6. Dans Visual Studio Code, ouvrez un terminal (`Terminal > New Terminal`) et déplacez-vous dans le dossier qui contiendra les documents du cours (utilisez la commande `cd`)
+7. Exécutez les commandes suivantes **une ligne à la fois**:
 
 Windows:
 
@@ -22,6 +34,7 @@ cd tac
 pip install virtualenv
 virtualenv tac_venv --python=python3
 .\tac_venv\Scripts\activate
+pip install --upgrade pip wheel setuptools
 pip install -r requirements.txt
 python -m spacy download fr_core_news_md
 ```
@@ -34,13 +47,12 @@ cd tac
 pip install virtualenv
 virtualenv tac_venv --python=python3 (ou: python3 -m venv tac_venv)
 source tac_venv/bin/activate
-pip install --upgrade pip
-pip install wheel
+pip install --upgrade pip wheel setuptools
 pip install -r requirements.txt
 python -m spacy download fr_core_news_md
 ```
 
-7. Vous pouvez maintenant utiliser et exécuter le code qui se trouve dans les notebooks (fichiers `.ipynb`) en choisissant l'environnement `tac_venv` (en haut à droite de votre écran)
+8. Vous pouvez maintenant utiliser et exécuter le code qui se trouve dans les notebooks (fichiers `.ipynb`) en choisissant l'environnement `tac_venv`
 
 ## Module 1
 
