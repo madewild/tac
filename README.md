@@ -12,10 +12,9 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
 4. Téléchargez et installez [Visual Studio Code](https://code.visualstudio.com/)
 5. Installez un compilateur C++:
     - Sur Windows:
-        - Ouvrez la page "Downloads" Open the Visual Studio downloads page in your browser.
         - Cliquez sur [ce lien](https://aka.ms/vs/17/release/vs_BuildTools.exe). Le téléchargement d'un fichier `.exe` se lancera automatiquement.
         - Exécutez le fichier `.exe` téléchargé
-        - Durant l'installation, sélecttionnez `C++ Build Tools` → `Install`.
+        - Durant l'installation, sélectionnez `C++ Build Tools` → `Install`.
         - Redémarrez votre machine.
     - Sur MacOS, ouvrez un terminal et tapez la commande suivante:
         ```bash
