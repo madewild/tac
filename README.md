@@ -31,7 +31,7 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 git clone https://github.com/<YOUR-GITHUB-ID>/tac
 cd tac
 pip install virtualenv
-virtualenv tac_venv --python=python3
+python -m venv tac_venv
 .\tac_venv\Scripts\activate
 pip install --upgrade pip wheel setuptools
 pip install -r requirements.txt
