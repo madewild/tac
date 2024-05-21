@@ -1,5 +1,5 @@
 ipykernel==6.15.2
-requests==2.31.0
+requests==2.32.0
 SPARQLWrapper==2.0.0
 beautifulsoup4==4.8.2
 lxml==4.9.1
