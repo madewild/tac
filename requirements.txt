@@ -5,6 +5,7 @@ beautifulsoup4==4.8.2
 lxml==4.9.1
 textblob==0.17.1
 pypdf2==3.0.1
+textract==1.6.5
 spacy==3.4.1
 textblob_fr==0.2.0
 langid==1.1.6
