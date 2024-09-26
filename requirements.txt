@@ -12,6 +12,7 @@ langid==1.1.6
 gensim==4.2.0
 faker==14.2.0
 openpyxl==3.0.10
+numpy==1.26
 nltk==3.9
 thefuzz[speedup]==0.19.0
 yake==0.4.8
