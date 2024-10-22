@@ -7,7 +7,7 @@ textblob==0.17.1
 pypdf2==3.0.1
 textract==1.6.5
 spacy==3.5.2
-pydantic==1.10.2
+pydantic==1.10.13
 textblob_fr==0.2.0
 langid==1.1.6
 gensim==4.3.3
