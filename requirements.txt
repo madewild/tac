@@ -10,7 +10,7 @@ spacy==3.5.2
 pydantic==1.10.2
 textblob_fr==0.2.0
 langid==1.1.6
-gensim==4.2.0
+gensim==4.3.3
 faker==14.2.0
 openpyxl==3.0.10
 numpy==1.26
