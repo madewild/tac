@@ -11,6 +11,7 @@ pydantic==1.10.13
 textblob_fr==0.2.0
 langid==1.1.6
 gensim==4.3.3
+scipy==1.11.4
 faker==14.2.0
 openpyxl==3.0.10
 numpy==1.26
