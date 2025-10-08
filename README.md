@@ -28,27 +28,43 @@ Windows:
 
 ```bash
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
 git clone https://github.com/<YOUR-GITHUB-ID>/tac
+
 cd tac
+
 pip install virtualenv
+
 python -m venv tac_venv
+
 .\tac_venv\Scripts\activate
-pip install --upgrade pip wheel setuptools
+
+python -m pip install --upgrade pip wheel setuptools
+
 pip install -r requirements.txt
-python -m spacy download fr_core_news_md
+
+pip install fr_core_news_md
+
 ```
 
 Linux / MacOS:
 
 ```bash
 git clone https://github.com/<YOUR-GITHUB-ID>/tac
+
 cd tac
+
 pip install virtualenv
+
 virtualenv tac_venv --python=python3 (ou: python3 -m venv tac_venv)
+
 source tac_venv/bin/activate
+
 pip install --upgrade pip wheel setuptools
+
 pip install -r requirements.txt
-python -m spacy download fr_core_news_md
+
+pip install  fr_core_news_md
 ```
 
 8. Vous pouvez maintenant utiliser et exécuter le code qui se trouve dans les notebooks (fichiers `.ipynb`) en choisissant l'environnement `tac_venv`
