@@ -109,3 +109,6 @@ tac_venv/
 .vscode/settings.json
 .DS_Store
 */tmp/*
+
+# TP1 outputs
+/tp1/output/pdfs/
