@@ -6,7 +6,7 @@ lxml==5.3.0
 textblob==0.17.1
 pypdf2==3.0.1
 textract-py3==2.1.1
-spacy==3.5.2
+spacy==3.8.0
 pydantic==1.10.13
 textblob_fr==0.2.0
 langid==1.1.6
