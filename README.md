@@ -17,9 +17,11 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
         - Durant l'installation, sélectionnez `C++ Build Tools` → `Install`.
         - Redémarrez votre machine.
     - Sur MacOS, ouvrez un terminal et tapez la commande suivante:
+
         ```bash
         xcode-select --install
         ```
+
     - Sur Linux, installez `gcc` via votre gestionnaire de packets
 6. Dans Visual Studio Code, ouvrez un terminal (`Terminal > New Terminal`) et déplacez-vous dans le dossier qui contiendra les documents du cours (utilisez la commande `cd`)
 7. Exécutez les commandes suivantes **une ligne à la fois**:
