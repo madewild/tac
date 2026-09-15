@@ -8,9 +8,20 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
 2. Installez [uv](https://docs.astral.sh/uv/getting-started/installation/), l'outil qui gère à la fois Python, l'environnement virtuel et les dépendances du projet:
     - Windows (PowerShell):
 
-        ```bash
+        ```powershell
         powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
         ```
+        Vous aurez peut-être à ajouter votre .local/bin au chemin d'exécution pour pouvoir exécuter les commandes `uv`:
+        
+        ```powershell
+        $env:Path = "C:\Users\Denis\.local\bin;$env:Path"
+        ```
+        
+        Et autoriser l'exécution de scripts via le terminal : 
+        ```powershell
+        Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+        ```
+
 
     - MacOS / Linux:
 
