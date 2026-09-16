@@ -14,7 +14,7 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
         Vous aurez peut-être à ajouter votre .local/bin au chemin d'exécution pour pouvoir exécuter les commandes `uv`:
         
         ```powershell
-        $env:Path = "C:\Users\Denis\.local\bin;$env:Path"
+        $env:Path = "$env:Path = "$HOME\.local\bin;$env:Path"
         ```
         
         Et autoriser l'exécution de scripts via le terminal : 
