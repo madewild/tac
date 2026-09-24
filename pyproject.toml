@@ -1,0 +1,35 @@
+[project]
+name = "tac"
+version = "0.1.0"
+description = "Matériel du cours de Traitement automatique de corpus (STIC-B545, ULB)"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "beautifulsoup4==4.11.1",
+    "faker==14.2.0",
+    "fr-core-news-md==3.8.0",
+    "gensim==4.4.0",
+    "ipykernel==7.2.0",
+    "langid==1.1.6",
+    "lxml==6.1.0",
+    "matplotlib==3.10.9",
+    "nltk==3.10.0",
+    "numpy==2.4.4",
+    "openpyxl==3.0.10",
+    "pandas==3.0.2",
+    "pycountry==24.6.1",
+    "pydantic==2.13.4",
+    "pypdf==6.19.0",
+    "requests==2.33.1",
+    "scikit-learn==1.9.1",
+    "scipy==1.17.1",
+    "seaborn==0.12.0",
+    "spacy==3.8.14",
+    "sparqlwrapper==2.0.0",
+    "textblob==0.17.1",
+    "textblob-fr==0.2.0",
+    "textract-py3==2.1.1",
+    "thefuzz[speedup]==0.19.0",
+    "unidecode==1.3.6",
+    "wordcloud==1.9.6",
+    "yake==0.4.8",
+]
