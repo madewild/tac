@@ -11,17 +11,18 @@ Ce répertoire contient le matériel pour le cours de "Traitement automatique de
         ```powershell
         powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
         ```
+
         Vous aurez peut-être à ajouter votre .local/bin au chemin d'exécution pour pouvoir exécuter les commandes `uv`:
-        
+
         ```powershell
         $env:Path = "$env:Path = "$HOME\.local\bin;$env:Path"
         ```
-        
-        Et autoriser l'exécution de scripts via le terminal : 
+
+        Et autoriser l'exécution de scripts via le terminal :
+
         ```powershell
         Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
         ```
-
 
     - MacOS / Linux:
 
@@ -45,7 +46,6 @@ uv sync
 ```
 
 Cette dernière commande télécharge la bonne version de Python si nécessaire, crée l'environnement virtuel dans `.venv`, et installe toutes les dépendances du projet (listées dans `pyproject.toml`, versions figées dans `uv.lock`) — en une seule étape.
-
 7. Vous pouvez maintenant utiliser et exécuter le code qui se trouve dans les notebooks (fichiers `.ipynb`) en choisissant l'environnement Python situé dans `.venv` (VS Code devrait le proposer automatiquement)
 
 ### Installer une librairie supplémentaire
