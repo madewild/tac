@@ -23,7 +23,7 @@ dependencies = [
     "pandas==3.0.2",
     "pycountry==24.6.1",
     "pydantic==2.13.4",
-    "pypdf==6.21.2",
+    "pypdf==6.21.4",
     "requests==2.33.1",
     "scikit-learn==1.9.1",
     "scipy==1.17.1",
