@@ -15,7 +15,7 @@ dependencies = [
     "lxml==6.1.0",
     "markitdown[docx,pdf,pptx,xls,xlsx]>=0.1.8",
     "matplotlib==3.10.9",
-    "nltk==3.10.3",
+    "nltk==3.10.4",
     "numpy==2.4.4",
     "odfpy>=1.4.1",
     "openai-whisper>=20250625",
