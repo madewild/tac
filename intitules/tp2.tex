@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[french]{babel}
+
+\usepackage[top=25mm,left=40mm,right=40mm]{geometry}
+\usepackage{fourier}
+\usepackage[babel]{csquotes}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage[normalem]{ulem}
+
+\title{TP2 : Extraction d'information}
+\author{Traitement automatique de corpus}
+\date{21 octobre 2025}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+Sur la base des éléments méthodologiques et des enseignements techniques présentés lors du cours théorique, il est demandé dans le cadre de ce TP :
+
+\begin{itemize}
+\item de se familiariser avec les techniques d'enrichissement (extraction de mots-clés, reconnaissance d'entités nommées, analyse de sentiment...)
+\item d'appliquer celles-ci au sous-corpus CAMille fourni sur l'UV
+\end{itemize}
+
+Pour ce faire, vous utiliserez différentes librairies Python vues au cours.
+
+\vspace{0.7cm}
+
+Les étapes à mettre en \oe uvre sont les suivantes :
+
+\begin{enumerate}
+\item Téléchargez le corpus CAMille (Le Soir) sur l'UV et dézippez les 7936 fichiers texte dans le dossier \texttt {tac/data/txt}
+\item Choisissez \underline{une année} au choix entre 1887 et 1970 (par exemple 1899, 1923, 1955, etc.)
+\item Modifiez le notebook \texttt{s1\_keywords.ipynb} pour extraire uniquement les mots-clés relatifs à cette année
+\item Enrichissez de manière itérative la liste de stopwords et générez un nuage de mots pour l'année choisie avec \texttt{s2\_wordcloud.ipynb} (image à inclure dans le rapport)
+\item Modifiez le notebook \texttt{s3\_ner.ipynb} pour trouver les entités nommées principales (personnes, organisations et lieux) pertinentes pour cette année
+\item Sélectionnez arbitrairement 10 phrases dans les articles de l'année choisie et analysez-les à l'aide du notebook \texttt{s4\_sentiment.ipynb}, puis résumez les résultats dans un tableau indiquant leur polarité et leur subjectivité
+%\item Lisez le notebook \url{s9\_gensim.ipynb} pour comprendre les bases du topic modeling avec Gensim
+\item Dans un dossier \enquote{tp2}, créez un nouveau notebook reprenant toutes les étapes précédentes et publiez-le (commit + push) sur GitHub
+\item Soumettez sur l'UV un court rapport (2-3 pages, format PDF) présentant brièvement les analyses effectuées et les découvertes relatives à l'année choisie.% et expliquant ce que le topic modeling pourrait apporter de plus
+\end{enumerate}
+
+Pour toute question, n'hésitez pas à me contacter via \texttt{max.de.wilde@ulb.be} en mettant systématiquement Denis Lebailly en copie (\texttt{denis.lebailly@ulb.be}).
+
+\end{document}

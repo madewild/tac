@@ -1,0 +1,54 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+%\usepackage[top=30mm,left=35mm,right=35mm]{geometry}
+\usepackage{fourier}
+\usepackage[babel]{csquotes}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage[normalem]{ulem}
+
+\title{TP4 : Travail final}
+\author{Traitement automatique de corpus}
+\date{25 novembre 2025}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+Sur la base des éléments méthodologiques et des enseignements techniques présentés lors du cours théorique, il est demandé dans le cadre de ce TP :
+
+\begin{itemize}
+\item de mobiliser les connaissances et compétences acquises tout au long du cours
+\item d'apporter un regard critique sur le traitement automatique de corpus en général
+\end{itemize}
+
+\vspace{0.7cm}
+
+Les étapes à mettre en \oe uvre sont les suivantes :
+
+\begin{enumerate}
+\item Choisissez une thématique très ciblée qui vous intéresse
+\item Rendez-vous sur \url{https://camille.ulb.be/} et effectuez une requête en l'affinant avec des filtres (journal, années, etc.) pour arriver \textbf{entre 500 et 999 résultats}
+\item Une fois la requête suffisamment précise, exportez les résultats en ZIP et/ou XLSX.
+\item Étudiez votre thématique de manière transversale dans votre sous-corpus en vous aidant des différentes techniques vue au cours (exploration, fréquences, mots-clés, entités nommées, sentiment, clustering, word2vec...)
+\item Si vous le souhaitez (optionnel), vous pouvez également faire appel à des techniques qui n'ont pas été vues au cours pour enrichir votre travail
+\item Tout au long de l'analyse, prenez note de ce qui fonctionne bien ou moins bien afin de déterminer les avantages et les limites du traitement automatique de corpus dans un contexte historique
+\item Rédigez un rapport scientifique de 10-15 pages comprenant une introduction, la requête de départ, une analyse des résultats obtenus et une conclusion critique ainsi qu'une courte bibliographie. Votre document doit être compréhensible pour quelqu'un qui ne connait pas le contexte du cours, par exemple un journaliste ou un historien intéressé par l'exploitation du corpus CAMille
+\item Publiez votre code (notebooks) sur GitHub dans le dossier \enquote{tp4} et soumettez votre rapport sur l'UV au format PDF
+
+\end{enumerate}
+
+Pour toute question, n'hésitez pas à me contacter via \texttt{max.de.wilde@ulb.be} en mettant toujours Denis Lebailly en copie (\texttt{denis.lebailly@ulb.be}).
+
+\end{document}

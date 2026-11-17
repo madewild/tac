@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage[top=25mm,left=40mm,right=40mm]{geometry}
+\usepackage{fourier}
+\usepackage[babel]{csquotes}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage[normalem]{ulem}
+
+\title{TP3 : Clustering et word2vec}
+\author{Traitement automatique de corpus}
+\date{4 novembre 2025}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+Sur la base des éléments méthodologiques et des enseignements techniques présentés lors du cours théorique, il est demandé dans le cadre de ce TP :
+
+\begin{itemize}
+\item d'effectuer un clustering des documents CAMille pour une décennie au choix et d'interpréter les résultats
+\item d'entraîner un modèle word2vec sur l'ensemble du corpus et d'explorer les relations entre vecteurs
+\end{itemize}
+
+Pour ce faire, vous utiliserez différentes librairies Python vues au cours comme scikit-learn et gensim.
+
+\vspace{0.7cm}
+
+Les étapes à mettre en \oe uvre sont les suivantes :
+
+\begin{enumerate}
+\item Choisissez une décennie (1890--1899, 1900--1909, 1910--1919, etc.)
+\item Effectuez un clustering des documents de cette décennie grâce au notebook \texttt{s2\_clustering.ipynb}, en adaptant éventuellement le nombre de clusters désirés
+\item Tentez d'interpréter les résultats obtenus : les clusters semblent-ils faire sens ? Si oui/non, comment l'expliquez-vous ? Aidez-vous au besoin d'une analyse de keywords et/ou wordcloud (voir TP2).
+\item Téléchargez sur l'UV le fichier zippé \texttt{sents.txt}, déjà segmenté en phrases, et placez-le dans le dossier data
+\item Entraînez un modèle word2vec (word embeddings) sur ces phrases grâce au notebook \texttt{s3\_word\_embeddings.ipynb}, en adaptant éventuellement les paramètres window (taille de la fenêtre) et min\_count (nombre minimum d'occurrences d'un mot)
+\item Vous pouvez entraîner plusieurs modèles afin de comparer leurs performances, en procédant par essais-erreurs pour choisir le meilleur modèle
+\item Explorez le modèle retenu à l'aide des fonctions \texttt{similarity} et \texttt{most\_similar} (choisissez au moins trois exemples pour chaque fonction)
+\item Rassemblez votre code dans un nouveau notebook \texttt{tp3.ipynb} placé dans le dossier \enquote{tp3} (n'oubliez pas de pusher)
+\item Soumettez sur l'UV un court rapport (3-4 pages, format PDF) présentant votre méthodologie et les résultats obtenus
+\end{enumerate}
+
+Pour toute question, n'hésitez pas à me contacter via \texttt{max.de.wilde@ulb.be} en mettant toujours Denis Lebailly en copie (\texttt{denis.lebailly@ulb.be}).
+
+\end{document}

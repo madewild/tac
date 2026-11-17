@@ -1,0 +1,57 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[francais]{babel}
+
+\usepackage[top=25mm,left=40mm,right=40mm]{geometry}
+\usepackage{fourier}
+\usepackage[babel]{csquotes}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage[normalem]{ulem}
+
+\title{TP1 : Web scraping et APIs}
+\author{Traitement automatique de corpus}
+\date{6 octobre 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+Sur la base des éléments méthodologiques et des enseignements techniques présentés lors du cours théorique, il est demandé dans le cadre de ce TP :
+
+\begin{itemize}
+\item de vous familiariser avec le corpus CAMille qui sera utilisé tout au long du cours
+\item de récupérer automatiquement 51 fichiers PDFs via la technique du web scraping
+\item d'apprendre à utiliser des APIs %et à construire des requêtes SPARQL pour interroger Wikidata
+\end{itemize}
+
+À cette fin, vous serez amenés à utiliser le logiciel de gestion de versions Git et le langage Python.
+
+\vspace{0.7cm}
+
+Les étapes à mettre en \oe uvre sont les suivantes :
+
+\begin{enumerate}
+\item Créez un compte GitHub et \emph{forkez} le repository contenant tout le code pour ce cours : \url{https://github.com/madewild/tac}
+%\item Mettez en place un site HTML basique avec GitHub Pages sur la base des explications fournies en annexe
+\item Téléchargez sur l'UV le sous-ensemble du corpus CAMille et explorez au hasard quelques fichiers pour avoir une première impression de la langue utilisée, des thèmes abordés, de la longueur des textes, de la qualité de l'OCR, etc.
+\item Adaptez le script \texttt{s3\_scrape.ipynb} afin de télécharger automatiquement les 51 fichiers PDF listés sur \url{https://max.de.wilde.web.ulb.be/camille/}. \emph{Pushez} ce script sur votre repo GitHub dans le dossier \enquote{tps/tp1}
+%\item Imaginez une requête SPARQL sur Wikidata qui puisse être utile pour les chercheurs en journalisme utilisant le corpus CAMille
+%\item Implémentez-la dans un court script (sur la base de \texttt{s2\_sparql.ipynb}) et \emph{pushez} le résultat sur votre repo GitHub dans un dossier nommé \enquote{tp1}
+\item Rendez-vous sur \url{https://github.com/public-apis/public-apis} et choisissez n'importe quelle API (autre que celle vue au cours !) qui présente un intérêt pour enrichir CAMille (vous pouvez aussi sélectionner une API ailleurs que sur ce repo)
+\item Écrivez un court script, sur la base de \texttt{s2\_api.ipynb}, qui permette d'interroger cette API et \emph{pushez}-le sur votre repo GitHub dans le dossier tp1
+\item Fournissez simplement sur l'UV votre identifiant GitHub (un seul mot !) pour le 2 novembre avant minuit
+\end{enumerate}
+
+Pour toute question, n'hésitez pas à contacter Denis Lebailly  (\texttt{denis.lebailly@ulb.be}) en me mettant en copie (\texttt{max.de.wilde@ulb.be}).
+
+\end{document}
